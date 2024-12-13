@@ -1,0 +1,122 @@
+/* Общие стили для всей страницы */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #222;
+}
+
+/* Стили для Header */
+.header-input {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto 20px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Стили для FiltersPanel */
+.filters-panel {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filters-panel label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filters-panel input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* Стили для TaskList */
+.task-list {
+  list-style: none;
+  padding: 0;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Стили для TaskItem */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.task-item:hover {
+  background: #f9f9f9;
+  transform: scale(1.01);
+}
+
+.task-item input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.task-item span {
+  flex-grow: 1;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.task-item .delete-button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.task-item .delete-button:hover {
+  background: #e60000;
+}
+
+/* Стили для приоритетов */
+.priority {
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.priority-low {
+  background: #d4f4d4;
+  color: #2e7d32;
+}
+
+.priority-medium {
+  background: #fff8b4;
+  color: #ff8f00;
+}
+
+.priority-high {
+  background: #f8d7da;
+  color: #c62828;
+}
