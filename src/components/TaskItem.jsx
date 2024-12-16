@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class TaskItem extends Component {
+class TaskItem extends React.PureComponent {
   getPriorityLabel = (priority) => {
     switch (priority) {
       case 1:

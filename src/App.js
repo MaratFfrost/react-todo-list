@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Header from "./components/Header";
 import TaskList from "./components/TaskList";
 import AddTaskForm from "./components/AddTaskForm";
 import FiltersPanel from "./components/FiltersPanel";
 
-class App extends Component {
+class App extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {

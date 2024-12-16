@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class FiltersPanel extends Component {
+class FiltersPanel extends React.PureComponent {
   handleFilterChange = (e, filterName) => {
     const { checked } = e.target;
     this.props.onFilterChange(filterName, checked);

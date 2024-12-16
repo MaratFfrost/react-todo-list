@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import TaskItem from "./TaskItem";
 
-class TaskList extends Component {
+class TaskList extends React.PureComponent {
   render() {
     const { todos, toggleDone, delTodo } = this.props;
 

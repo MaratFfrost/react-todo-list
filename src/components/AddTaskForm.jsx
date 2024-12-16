@@ -1,6 +1,6 @@
 import React from 'react';
 
-class AddTaskForm extends React.Component {
+class AddTaskForm extends React.PureComponent {
   handleSubmit = (e) => {
     e.preventDefault();
     const { name, description, priority, addTodo } = this.props;

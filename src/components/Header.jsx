@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Header extends Component {
+class Header extends React.PureComponent {
   render() {
     const { searchTerm, handleSearchChange } = this.props;
     return (
